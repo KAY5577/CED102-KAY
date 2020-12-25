@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="utf-8">
+    <title>關於我</title>
+
+    <style>
+
+      body{
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 0;
+      }
+
+      nav{
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: block;
+        /* ???為什麼display: inline-black整個nav就無法置中對齊??? */
+        /* border: 1px solid blue; */
+        width: 768px;
+        line-height: 3;
+      }
+
+      .nav>ul{
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .nav>ul>li{
+        margin: 0;
+        /* box-sizing: border-box; */
+        display: inline-block;
+        font-size: 18px;
+        margin-right: 20px;
+        /* border: 1px solid black; */
+        /* padding-left: 3px;
+        padding-right: 3px;
+        height: 51px; */ */
+      }
+
+      .nav>ul>li>a{
+        text-decoration: none;
+        display: inline-block;
+        color: black;
+        line-height: 51px;
+        padding: 0 3px;
+      }
+
+      .nav>ul>li>a:hover{
+        background-color: blue;
+        color: white;
+      }
+
+      .social{
+        position: relative;
+      }
+
+      .social:hover div{
+        display: block;
+      }
+
+      nav.nav>ul>li>div>ul>li.fb_ig{
+        border: 1px solid black;
+        text-decoration: none;
+        list-style: none;
+        width: 70px;
+        height: 40px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      nav.nav>ul>li>div>ul{
+        padding: 0;
+      }
+
+      nav.nav>ul>li>div{
+        position: absolute;
+        left: 0;
+        top:51px;
+        display: none;
+      }
+
+
+      .header{
+        background-image: url("./images/banner.jpg");
+        min-width: 768px;
+        width: 100%;
+        height:268px;
+        /* border: 1px solid green; */
+        background-size: cover;
+      }
+
+      .header img{
+        width: 100%;
+      }
+
+      .parent_aside_main{
+        font-size: 0 auto;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: block;
+        width: 768px;
+        /* border: 1px solid orange; */
+      }
+
+      .parent_aside_main>.aside{
+        margin: 0 auto;
+        font-size: 0;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 257px;
+        /* border: 1px solid green; */
+        vertical-align: top;
+      }
+
+      .parent_aside_main>.aside>img{
+        border-radius: 100px;
+        margin-left: 28px;
+        margin-top: -100px;
+      }
+
+      .parent_aside_main>.aside>.name{
+        margin: 0 auto;
+        margin-top: 20px;
+        width:54px;
+        color: black;
+        /* border: 1px solid green; */
+        font-size: 18px;
+      }
+
+      .parent_aside_main>.main{
+        margin: 0 auto;
+        font-size: 0;
+        box-sizing: border-box;
+        display: inline-block;
+        width: calc(100% - 257px);
+        /* border: 1px solid black; */
+        vertical-align: top;
+        font-size: 13px;
+      }
+
+      .parent_aside_main>.main>table{
+        border: 1px solid black;
+        line-height: 2.5;
+        /* text-align: center; */
+        border-collapse: collapse;
+      }
+
+      .parent_aside_main>.main>table td, table tr{
+        border: 1px solid black;
+      }
+
+      ul{
+        font-size: 13px;
+        line-height: 2;
+      }
+
+
+
+      .footer{
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 100%;
+        height: 60px;
+        /* border: 1px solid green; */
+        font-size: 16px;
+        color: white;
+        background-color: black;
+        line-height: 3.5;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+
+  <body>
+
+    <nav class="nav">
+        <img src="./images/logo_img.PNG">
+        <ul>
+          <li><a href="./index.html" target="_self">關於我</li>
+          <li><a href="./contact.html" target="_self">與我聯絡</li>
+          <li class="social"><a href="#" target="_self">社群網站
+            <div>
+              <ul>
+                <li class="fb_ig"><a href="#">FB</a></li>
+                <li class="fb_ig"><a href="#">IG</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+    </nav>
+
+    <header class="header">
+    </header>
+
+    <div class="parent_aside_main">
+
+      <div class="aside">
+        <img src="./images/avatar.jpg">
+        <div class="name"><h4>張某某</h4></div>
+      </div>
+
+      <div class="main">
+
+        <h3>基本資料</h3>
+        <table>
+          <tr>
+            <td>姓名:張某某</td>
+            <td>姓別:男</td>
+            <td>出生年月日:中華民國100年01月01日</td>
+          </tr>
+          <tr>
+            <td colspan="2">戶籍地:桃園市中壢市中大路300號</td>
+            <td>居住地:桃園市中壢市中大路300號</td>
+          </tr>
+          <tr>
+            <td colspan="3">簡短自介:學習網頁、前端建置、瞭解建置流程，希望能創造不可思議的產品服務。</td>
+          </tr>
+        </table>
+
+        <br>
+
+        <h3>工作或社團經驗</h3>
+        <ul>
+          <li>2009年:進入職場，開始於A公司擔任網站工程師一職。</li>
+          <li>2013年:於B公司，擔任iOS工程師一職。</li>
+          <li>2017年:於C公司，擔任前端工程師一職。</li>
+        </ul>
+
+        <br>
+        <br>
+
+      </div>
+    </div>
+
+    <footer class="footer"> &copy; All Rights Resvered</footer>
+
+  </body>
+</html>
